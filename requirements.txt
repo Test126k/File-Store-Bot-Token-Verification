@@ -3,6 +3,7 @@ git+https://github.com/youesky/pyrogram
 pyrogram
 TgCrypto
 pyromod
+python-telegram-bot  # Added for telegram functionality
 # --- For-Database ------------ #
 pymongo
 motor
