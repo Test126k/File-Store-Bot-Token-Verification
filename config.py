@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7534795436:AAFy7OTWaij8y0OaFmI7gk3Pn6DvuiRDFgY")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7781334107:AAE7LYShegYhDWphsmHhCjGSIpTVuOo-f4U")
 APP_ID = int(os.environ.get("APP_ID", "26300022"))
 API_HASH = os.environ.get("API_HASH", "def44e13defba9d104323e821955dfa3")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002168773865"))
@@ -21,7 +21,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "inshorturl.com")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "87f76cb3bcbb1e1647f55e3589b2127c065965a5")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE' ,  '43200')) # Add time in seconds
-IS_VERIFY = os.environ.get("IS_VERIFY", "True")
+IS_VERIFY = os.environ.get("IS_VERIFY", "False")
 TUT_VID = os.environ.get("TUT_VID", "https://t.me/Frooti_leaks_Bot?start=BQADAQADsAsAAjvkmURrgOOvCUSrGBYEHow") 
 
 #force sub channel id, if you want enable force sub
