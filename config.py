@@ -80,24 +80,3 @@ def LOGGER(name: str) -> logging.Logger:
 
 
 
-import asyncio
-from telegram import Bot
-
-# Initialize your bot with the token
-bot = Bot(token='7534795436:AAFy7OTWaij8y0OaFmI7gk3Pn6DvuiRDFgY')
-
-async def send_and_auto_delete(chat_id, text, delay=3600):  # Delay in seconds (e.g., 1 hour)
-    # Send the message and get the message ID
-    message = await bot.send_message(chat_id=chat_id, text=text)
-    message_id = message.message_id
-
-    # Wait for the specified delay
-    await asyncio.sleep(delay)
-
-    # Delete the message after the delay
-    try:
-        await bot.delete_message(chat_id=chat_id, message_id=message_id)
-    except Exception as e:
-        print(f"Failed to delete message: {e}")
-
-# Usage: await send_and_auto_delete(chat_id, "Your file link", 3600)
