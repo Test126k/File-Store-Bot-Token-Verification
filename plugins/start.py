@@ -32,7 +32,7 @@ from database.database import add_user, del_user, full_userbase, present_user
 from shortzy import Shortzy
 
 """add time in seconds for waiting before delete 
-1 min = 60, 2 min = 60 × 2 = 120, 5 min = 60 × 5 = 300"""
+1 min = 60, 2 min = 60 × 2 = 120, 5 min = 60 × 5 = 10800"""
 # SECONDS = int(os.getenv("SECONDS", "1200"))
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
@@ -127,7 +127,7 @@ async def start_command(client: Client, message: Message):
                     pass
 
             SD = await message.reply_text("𝗙𝗶𝗹𝗲𝘀 𝘄𝗶𝗹𝗹 𝗕𝗲 𝗔𝘂𝘁𝗼 𝗱𝗲𝗹𝗲𝘁𝗲𝗱 𝗔𝗳𝘁𝗲𝗿 𝟯 𝗛𝗼𝘂𝗿𝘀! ")
-            await asyncio.sleep(300)
+            await asyncio.sleep(10800)
 
             for snt_msg in snt_msgs:
                 try:
