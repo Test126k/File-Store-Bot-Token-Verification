@@ -126,7 +126,7 @@ async def start_command(client: Client, message: Message):
                 except:
                     pass
 
-            SD = await message.reply_text("Baka! Files will be deleted After 300 seconds. Save them to the Saved Message now!")
+            SD = await message.reply_text("𝗙𝗶𝗹𝗲𝘀 𝘄𝗶𝗹𝗹 𝗕𝗲 𝗔𝘂𝘁𝗼 𝗱𝗲𝗹𝗲𝘁𝗲𝗱 𝗔𝗳𝘁𝗲𝗿 𝟯 𝗛𝗼𝘂𝗿𝘀! ")
             await asyncio.sleep(300)
 
             for snt_msg in snt_msgs:
@@ -139,7 +139,7 @@ async def start_command(client: Client, message: Message):
         elif verify_status['is_verified']:
             reply_markup = InlineKeyboardMarkup(
                 [[InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "about"),
-                  InlineKeyboardButton('🍁 sᴇʀɪᴇsғʟɪx', url='https://t.me/Team_Netflix/40')]]
+                  InlineKeyboardButton('🍁 𝐏𝐨𝐬𝐭𝐢𝐧𝐠', url='https://t.me/+rH1KHXmpH85iMDZl')]]
             )
             await message.reply_text(
                 text=START_MSG.format(
@@ -166,7 +166,7 @@ async def start_command(client: Client, message: Message):
                     [InlineKeyboardButton("• ᴏᴘᴇɴ ʟɪɴᴋ", url=link)],
                     [InlineKeyboardButton('ᴛᴜᴛᴏʀɪᴀʟ •', url=TUT_VID)]
                 ]
-                await message.reply(f"Your Ads token is expired, refresh your token and try again.\n\nToken Timeout: {get_exp_time(VERIFY_EXPIRE)}\n\nWhat is the token?\n\nThis is an ads token. If you pass 1 ad, you can use the bot for 24 Hour after passing the ad.", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
+                await message.reply(f"Your Ads token is expired, refresh your token and try again.\n\nToken Timeout: {get_exp_time(VERIFY_EXPIRE)}\n\nWhat is the token?\n\nThis is an ads token. If you pass 1 ad, you can use the bot for 12 Hours after passing the ad.", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
 
 
 
